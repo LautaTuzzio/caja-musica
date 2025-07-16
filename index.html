@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Música Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎶 Caja de Música Interactiva 🎶</h1>
+        <div class="controls">
+            <button id="playButton" class="control-btn">▶️ Reproducir</button>
+            <button id="volumeUp" class="control-btn">🔊</button>
+            <button id="volumeDown" class="control-btn">🔉</button>
+        </div>
+        <div id="musicBox"></div>
+        <div class="song-list-container">
+            <h3>🎵 Lista de Canciones</h3>
+            <div id="songList" class="song-list">
+                <!-- Songs will be loaded here by JavaScript -->
+                <p class="loading-text">Cargando canciones...</p>
+            </div>
+            <div class="song-info">
+                <p id="songTitle">Selecciona una canción</p>
+                <p id="songTime">00:00 / 00:00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bibliotecas necesarias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
